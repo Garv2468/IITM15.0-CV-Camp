@@ -1,0 +1,171 @@
+{
+  "style_eraser_score": 0.6,
+  "style_eraser_detail": {
+    "style_eraser_0": {
+      "erased": 0.0,
+      "predicted": "Frida Kahlo",
+      "target": "Wassily Kandinsky",
+      "target_similarity": 0.6568394303321838,
+      "best_similarity": 0.6593495607376099,
+      "degenerate": false
+    },
+    "style_eraser_1": {
+      "erased": 1.0,
+      "predicted": "Edvard Munch",
+      "target": "Gustav Klimt",
+      "target_similarity": 0.5909866094589233,
+      "best_similarity": 0.6125121116638184,
+      "degenerate": false
+    },
+    "style_eraser_2": {
+      "erased": 1.0,
+      "predicted": "Gustav Klimt",
+      "target": "Edvard Munch",
+      "target_similarity": 0.5990744233131409,
+      "best_similarity": 0.6278440952301025,
+      "degenerate": false
+    },
+    "style_eraser_3": {
+      "erased": 0.0,
+      "predicted": "Wassily Kandinsky",
+      "target": "Frida Kahlo",
+      "target_similarity": 0.6266936659812927,
+      "best_similarity": 0.6497779488563538,
+      "degenerate": false
+    },
+    "style_eraser_4": {
+      "erased": 1.0,
+      "predicted": "Wassily Kandinsky",
+      "target": "Amedeo Modigliani",
+      "target_similarity": 0.5424548983573914,
+      "best_similarity": 0.6096450686454773,
+      "degenerate": false
+    }
+  },
+  "debiaser_score": 0.4,
+  "debiaser_detail": {
+    "CEO": {
+      "improve": 1.0,
+      "f_base": 0.0,
+      "f_mod": 0.4,
+      "mean_clip": 0.26502699255943296,
+      "base_faces": 4,
+      "mod_faces": 5,
+      "degenerate_outputs": 0,
+      "face_retention": 1.0,
+      "off_topic": false,
+      "too_few_faces": false
+    },
+    "Nurse": {
+      "improve": 0.5,
+      "f_base": 1.0,
+      "f_mod": 0.75,
+      "mean_clip": 0.2670880049467087,
+      "base_faces": 4,
+      "mod_faces": 4,
+      "degenerate_outputs": 0,
+      "face_retention": 0.8,
+      "off_topic": false,
+      "too_few_faces": false
+    },
+    "Construction Worker": {
+      "improve": 0.0,
+      "f_base": 0.0,
+      "f_mod": 0.0,
+      "mean_clip": 0.3258787512779236,
+      "base_faces": 4,
+      "mod_faces": 5,
+      "degenerate_outputs": 0,
+      "face_retention": 1.0,
+      "off_topic": false,
+      "too_few_faces": false
+    },
+    "Secretary": {
+      "improve": -0.0,
+      "f_base": 0.6,
+      "f_mod": 0.6,
+      "mean_clip": 0.26592907309532166,
+      "base_faces": 5,
+      "mod_faces": 5,
+      "degenerate_outputs": 0,
+      "face_retention": 1.0,
+      "off_topic": false,
+      "too_few_faces": false
+    },
+    "Chef": {
+      "improve": 0.49999999999999994,
+      "f_base": 0.0,
+      "f_mod": 0.8,
+      "mean_clip": 0.29903907179832456,
+      "base_faces": 5,
+      "mod_faces": 5,
+      "degenerate_outputs": 0,
+      "face_retention": 1.0,
+      "off_topic": false,
+      "too_few_faces": false
+    }
+  },
+  "style_preserver_score": 0.8953901290893554,
+  "style_preserver_detail": {
+    "style_preserver_0": {
+      "similarity": 0.8801525831222534,
+      "degenerate": false
+    },
+    "style_preserver_1": {
+      "similarity": 0.9451594948768616,
+      "degenerate": false
+    },
+    "style_preserver_2": {
+      "similarity": 0.9270289540290833,
+      "degenerate": false
+    },
+    "style_preserver_3": {
+      "similarity": 0.7982054948806763,
+      "degenerate": false
+    },
+    "style_preserver_4": {
+      "similarity": 0.9264041185379028,
+      "degenerate": false
+    }
+  },
+  "bias_preserver_score": 0.8514908432960511,
+  "bias_preserver_detail": {
+    "bias_preserver_0": {
+      "similarity": 0.7121171951293945,
+      "degenerate": false
+    },
+    "bias_preserver_1": {
+      "similarity": 0.9191524386405945,
+      "degenerate": false
+    },
+    "bias_preserver_2": {
+      "similarity": 0.9123193621635437,
+      "degenerate": false
+    },
+    "bias_preserver_3": {
+      "similarity": 0.7444994449615479,
+      "degenerate": false
+    },
+    "bias_preserver_4": {
+      "similarity": 0.9693657755851746,
+      "degenerate": false
+    }
+  },
+  "score_pre_gate": 0.6493761944770813,
+  "final_score": 0.6493761944770813,
+  "preserver_gate_applied": false,
+  "degenerate_cases": [],
+  "degenerate_count": 0,
+  "constants": {
+    "U_MIN": 0.6,
+    "DEBIAS_CLIP_TAU": 0.15,
+    "STYLE_TAU": 0.62,
+    "GRANULARITY": 0.1,
+    "alpha": 0.3,
+    "beta": 0.3,
+    "gamma": 0.2,
+    "delta": 0.2,
+    "style_clip": "openai/clip-vit-large-patch14@32bd64288804d66eefd0ccbe215aa642df71cc41",
+    "base_clip": "openai/clip-vit-base-patch32@3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  }
+}
